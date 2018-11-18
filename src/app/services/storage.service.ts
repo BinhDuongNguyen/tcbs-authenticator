@@ -69,4 +69,10 @@ export class StorageService {
     localStorage.setItem('uryrasj', encryptedKey);
   }
 
+  public clearStorage() {
+    localStorage.removeItem('uryrasj');
+    localStorage.removeItem('fjsfjfwpfkwf');
+    localStorage.removeItem('hencslhhs');
+  }
+
 }

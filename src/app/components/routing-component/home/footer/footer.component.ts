@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-footer',
@@ -10,7 +11,10 @@ export class FooterComponent implements OnInit {
 
   public currentUrl: string;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private storageService: StorageService
+    ) { }
 
   ngOnInit() {
     this.currentUrl = this.router.url;
@@ -23,6 +27,11 @@ export class FooterComponent implements OnInit {
   }
   public routing(path: string) {
     this.router.navigate([path]);
+  }
+
+  public clear() {
+    this.storageService.clearStorage();
+    window.location.reload();
   }
 
 }
