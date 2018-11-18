@@ -1,0 +1,60 @@
+.basic-otp-container {
+  width: 100%;
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+}
+
+.otp-box {
+  margin: auto;
+  margin-top: 32px;
+  width: 280px;
+  height: 320px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.otp-box-title {
+  padding: 16px;
+  background-color: #c41c16;
+  color: #fff;
+  border-radius: 16px 16px 0 0;
+}
+
+.otp-fill {
+  margin: auto;
+  width: 216px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #c41c16;
+}
+
+.otp-text {
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 12px;
+  color: #c41c16;
+  font-weight: 600;
+}
+
+.otp-button {
+  text-align: center;
+}
+
+.otp-button>button {
+  width: 216px;
+  border-radius: 16px;
+}
+
+.otp-time {
+  text-align: -webkit-center;
+}
+
+.otp-time-counter {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: calc(50% - 11px);
+  top: 192px;
+}

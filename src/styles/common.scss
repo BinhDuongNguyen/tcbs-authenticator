@@ -1,0 +1,21 @@
+// overall rule
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  color: #424242;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,45 @@
+<div class="container-pin" *ngIf="isShowPinPad">
+  <div class="close-button">
+    <button mat-icon-button (click)="close()">
+      <mat-icon class="text-primary">close</mat-icon>
+    </button>
+  </div>
+  <div class="pin-box">
+    <div class="row text-center">
+      <div class="pin-title">
+        <div class="typo-headline-3 text-primary">{{title}}</div>
+      </div>
+    </div>
+    <div class="row text-center p-t-16">
+      <div class="pin-filling">
+        <div class="round" [ngClass]="{'active': pin.length > 0}"></div>
+        <div class="round" [ngClass]="{'active': pin.length > 1}"></div>
+        <div class="round" [ngClass]="{'active': pin.length > 2}"></div>
+        <div class="round" [ngClass]="{'active': pin.length > 3}"></div>
+      </div>
+    </div>
+    <div class="row p-t-24">
+      <div class="pin-pad">
+        <div class="row pin-key">
+          <button mat-icon-button (click)="pressKey(1)">1</button>
+          <button mat-icon-button (click)="pressKey(2)">2</button>
+          <button mat-icon-button (click)="pressKey(3)">3</button>
+        </div>
+        <div class="row pin-key p-t-16">
+          <button mat-icon-button (click)="pressKey(4)">4</button>
+          <button mat-icon-button (click)="pressKey(5)">5</button>
+          <button mat-icon-button (click)="pressKey(6)">6</button>
+        </div>
+        <div class="row pin-key p-t-16">
+          <button mat-icon-button (click)="pressKey(7)">7</button>
+          <button mat-icon-button (click)="pressKey(8)">8</button>
+          <button mat-icon-button (click)="pressKey(9)">9</button>
+        </div>
+        <div class="row pin-key p-t-16">
+          <button mat-icon-button (click)="pressKey(0)">0</button>
+          <button mat-icon-button (click)="pressBack()"><mat-icon>backspace</mat-icon></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

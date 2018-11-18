@@ -1,0 +1,28 @@
+.mat-snack-bar-container {
+  // background-color: #c41c16;
+  // border-radius: 4px 4px 0 0 !important;
+}
+
+.mat-simple-snackbar-action {
+  color: #fff;
+}
+
+.mat-snack-bar-handset .mat-snack-bar-container {
+  margin: 0 !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: #c41c16 !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: #c41c16 !important;
+}
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  background-color: #c41c16 !important;
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #c41c16 !important;
+}

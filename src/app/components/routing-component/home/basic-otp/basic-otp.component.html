@@ -1,0 +1,33 @@
+<div class="basic-otp-container">
+  <div class="otp-box mat-elevation-z8">
+    <div class="row">
+      <div class="otp-box-title">
+        <span class="typo-headline-2">Basic OTP</span>
+      </div>
+    </div>
+    <div class="row p-t-24">
+      <div class="otp-fill">
+        <div class="otp-text" [ngClass]="{'p-t-4': !otp}">{{ otp ? otp : '******'}}</div>
+      </div>
+    </div>
+    <div class="row p-t-16" *ngIf="otp">
+      <div class="row text-center">
+        <span class="typo-body-2">OTP sẽ hết hạn trong</span>
+      </div>
+    </div>
+    <div class="row p-t-16" *ngIf="otp">
+      <div class="otp-time">
+        <mat-progress-spinner class="example-margin" [color]="'primary'" [mode]="'determinate'" [value]="percentTime"
+          [strokeWidth]="'4'" [diameter]="'52'"></mat-progress-spinner>
+      </div>
+    </div>
+    <div class="row p-t-24">
+      <div class="otp-button">
+        <button class="mat-elevation-z8" mat-flat-button color="primary" (click)="getOtp()">Nhận OTP</button>
+      </div>
+    </div>
+    <div class="otp-time-counter" *ngIf="otp">
+      <span class="typo-body-2">{{remainTime}}s</span>
+    </div>
+  </div>
+</div>

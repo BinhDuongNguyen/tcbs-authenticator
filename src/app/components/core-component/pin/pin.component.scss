@@ -1,0 +1,55 @@
+.container-pin {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.pin-box {
+  padding-top: 72px;
+}
+
+.pin-filling {
+  margin: auto;
+  display: inline-flex;
+}
+
+.pin-filling .round {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border: 1px solid #c41c16;
+  border-radius: 8px;
+  margin: 0 8px;
+}
+
+.pin-filling .round.active {
+  background-color: #c41c16;
+}
+
+.pin-pad>.row {
+  margin: auto;
+  text-align: center;
+}
+
+.pin-pad>.pin-key:last-child>button:first-child {
+  margin-left: 88px;
+}
+
+.pin-key>button {
+  width: 64px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #c41c16;
+  margin: 0 8px;
+  background-color: #EEEEEE;
+}

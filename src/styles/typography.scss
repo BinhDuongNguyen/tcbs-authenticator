@@ -1,0 +1,74 @@
+// headline
+
+.typo-headline-1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-rendering: optimizelegibility;
+  letter-spacing: 1.5px;
+}
+
+.typo-headline-2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-rendering: optimizelegibility;
+  letter-spacing: 1.5px;
+}
+
+.typo-headline-3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-rendering: optimizelegibility;
+  letter-spacing: normal;
+}
+
+// body
+
+.typo-body-1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.typo-body-2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.typo-body-3 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+// text-color 
+
+.text-primary {
+  color: #c41c16
+}
+
+// text-align
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// button
+
+.typo-button-1 {
+  font-size: 16px;
+  font-weight: 700;
+  text-rendering: optimizelegibility;
+  letter-spacing: normal;
+}
