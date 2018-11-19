@@ -1,13 +1,14 @@
 .basic-otp-container {
   width: 100%;
-  position: absolute;
+  // position: absolute;
   top: 64px;
   bottom: 0;
+  padding-top: 32px;
 }
 
 .otp-box {
   margin: auto;
-  margin-top: 32px;
+  // margin-top: 32px;
   width: 280px;
   height: 360px;
   border-radius: 16px;

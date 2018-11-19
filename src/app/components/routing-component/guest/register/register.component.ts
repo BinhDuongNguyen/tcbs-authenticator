@@ -20,12 +20,15 @@ export class RegisterComponent implements OnInit {
 
   public state: number;
 
+  public parentHeight: string;
+
   constructor(
     private pinService: PinService,
     private snackBar: MatSnackBar,
     private storageService: StorageService,
     private router: Router
   ) {
+    this.parentHeight = window.innerHeight - 80 - 78 - 24 -24 + 'px';
   }
 
   ngOnInit() {

@@ -1,29 +1,28 @@
-footer {
-  position: absolute;
-  bottom: 0;
+.footer {
+  // position: relative;
   height: 80px;
   width: 100%;
   border-top: 1px solid #e4e4e4;
 }
 
-footer>.col-xs-3>.row {
+.footer>.col-xs-3>.row {
   height: 100%;
   text-align: center;
 }
 
-footer>.col-xs-3 {
+.footer>.col-xs-3 {
   height: 100%;
 }
 
-footer .footer-icon {
+.footer .footer-icon {
   height: 100%;
 }
 
-footer .footer-icon>button {
+.footer .footer-icon>button {
   height: 100%;
   width: 100%;
 }
 
-footer .footer-icon>button.active {
+.footer .footer-icon>button.active {
   color: #c41c16;
 }

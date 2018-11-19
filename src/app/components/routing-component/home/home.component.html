@@ -1,7 +1,15 @@
-<div class="header">
-  <img src="/assets/images/logos/logotcbs.svg">
+<div class="parent">
+  <div class="row">
+    <div class="header">
+      <img src="/assets/images/logos/logotcbs.svg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="home-container" [style.height]="homeContainerHeight">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="row">
+    <app-footer></app-footer>
+  </div>
 </div>
-<div class="home-container">
-  <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer>
